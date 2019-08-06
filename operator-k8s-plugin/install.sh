@@ -2,6 +2,7 @@
 IMAGE=quay.io/purestorage/pso-operator:v0.0.5
 NAMESPACE=pso-operator
 KUBECTL=oc
+ORCHESTRATOR=k8s
 
 usage()
 {
@@ -53,8 +54,7 @@ case "$1" in
 done
 
 if [[ -z ${VALUESFILE} || ! -f ${VALUESFILE} ]]; then
-    usage
-    echo "File ${VALUESFILE} for values.yaml does not exist"
+    echo "File ${VALUESFILE} does not exist"
     exit 1
 fi
 
