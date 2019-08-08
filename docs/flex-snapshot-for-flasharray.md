@@ -53,7 +53,7 @@ kubectl get -o name -l app=pure-provisioner pod | cut -d*/* -f2
 ```
 # kubectl exec pure-provisioner-6d9878fd47-wp41b -- snapshot create -n k8s_ns1 pvc1
 ```
-Output : `k8s-pvc-b9dd0972-c8b3-11e7-9ee8-fa163eb1e272.883661`
+Output : `k8s-pvc-b9dd0972-c8b3-11e7-9ee8-fa163eb1e272.883661`</br>
 Output : `k8s_1-pvc-b9dd0972-c8b3-11e7-9ee8-fa163eb1e272.883661`
 
 Here, `k8s-pvc-b9dd0972-c8b3-11e7-9ee8-fa163eb1e272.883661` is the snapshotname.
