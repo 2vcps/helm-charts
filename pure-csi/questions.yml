@@ -9,32 +9,19 @@ questions:
   label: "Pure PSO Namespace"
   type: string
   default: "rancherk8s"
-- variable: arrays
+- variable: rancher.arrays.FlashArrays.MgmtEndPoint
   label: "FA EndPoint"
-  type: multiline
+  type: string
   required: true
-  default: '
-  #FlashArrays:
-  #  - MgmtEndPoint: "1.2.3.4"
-  #    APIToken: "a526a4c6-18b0-a8c9-1afa-3499293574bb"
-  #    Labels:
-  #      rack: "22"
-  #      env: "prod"
-  #  - MgmtEndPoint: "1.2.3.5"
-  #    APIToken: "b526a4c6-18b0-a8c9-1afa-3499293574bb"
-  #FlashBlades:
-  #  - MgmtEndPoint: "1.2.3.6"
-  #    APIToken: "T-c4925090-c9bf-4033-8537-d24ee5669135"
-  #    NfsEndPoint: "1.2.3.7"
-  #    Labels:
-  #      rack: "7b"
-  #      env: "dev"
-  #  - MgmtEndPoint: "1.2.3.8"
-  #    APIToken: "T-d4925090-c9bf-4033-8537-d24ee5669135"
-  #    NfsEndPoint: "1.2.3.9"
-  #    Labels:
-  #      rack: "6a"
-  '
+  default: "192.169.1.30"
   description: "FlashArray Management VIP"
   group: "FlashArray Settings"
+- variable: rancher.arrays.FlashArrays.APIToken
+  label: "FA API"
+  type: string
+  required: true
+  default: "some API key"
+  description: "FlashArray Management VIP"
+  group: "FlashArray Settings"
+
 
