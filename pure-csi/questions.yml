@@ -1,0 +1,24 @@
+categories:
+- storage
+rancher_min_version: 2.2.0
+labels:
+  io.cattle.role: cluster
+  io.rancher.certified: partner
+questions:
+- variable: namespace.pure
+  label: "Pure PSO Namespace"
+  type: string
+  default: "rancherk8s"
+- variable: arrays.FlashArrays.MgmtEndPoint
+  label: "FA EndPoint"
+  type: string
+  required: true
+  default: "192.168.1.28"
+  description: "FlashArray Management VIP"
+  group: "FlashArray Settings"
+- variable: arrays.FlashArrays.APIToken
+  label: "API Token"
+  type: string
+  required: true
+  description: "Specify FA API Token"
+  group: "FlashArray Settings"
