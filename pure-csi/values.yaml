@@ -83,8 +83,8 @@ rancher:
 # provisioner. An example is shown below:
 arrays:
   FlashArrays:
-    - MgmtEndPoint: { .Values.rancher.arrays.FlashArrays.MgmtEndPoint }
-      APIToken: { .Values.rancher.arrays.FlashArrays.APIToken }
+    - MgmtEndPoint: {{ .Values.rancher.arrays.FlashArrays.MgmtEndPoint }}
+      APIToken: {{ .Values.rancher.arrays.FlashArrays.APIToken }}
   #    Labels:
   #      rack: "22"
   #      env: "prod"
