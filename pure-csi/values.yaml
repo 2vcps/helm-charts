@@ -84,7 +84,7 @@ rancher:
 arrays:
   FlashArrays:
     - MgmtEndPoint: { .Values.rancher.arrays.FlashArrays.MgmtEndPoint }
-      APIToken: { .Values.rancher.arrays.FlashArrays.APITOken }
+      APIToken: { .Values.rancher.arrays.FlashArrays.APIToken }
   #    Labels:
   #      rack: "22"
   #      env: "prod"
