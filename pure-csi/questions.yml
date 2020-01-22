@@ -9,14 +9,14 @@ questions:
   label: "Pure PSO Namespace"
   type: string
   default: "rancherk8s"
-- variable: arrays.FlashArrays.MgmtEndPoint
+- variable: arrays.FlashArrays[0].MgmtEndPoint
   label: "FA EndPoint"
   type: string
   required: true
   default: "192.169.1.30"
   description: "FlashArray Management VIP"
   group: "FlashArray Settings"
-- variable: arrays.FlashArrays.APIToken
+- variable: arrays.FlashArrays[0].APIToken
   label: "FA API"
   type: string
   required: true
