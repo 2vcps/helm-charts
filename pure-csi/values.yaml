@@ -71,20 +71,15 @@ orchestrator:
   name: k8s
 
 #Rancher
-rancher:
-  arrays:
-    FlashArrays:
-      MgmtEndPoint: ""
-      APIToken: ""
 # arrays specify what storage arrays should be managed by the plugin, this is
 # required to be set upon installation. For FlashArrays you must set the "MgmtEndPoint"
 # and "APIToken", and for FlashBlades you need the additional "NfsEndPoint" parameter.
 # The labels are optional, and can be any key-value pair for use with the "fleet"
 # provisioner. An example is shown below:
 arrays:
-  FlashArrays:
-    - MgmtEndPoint: {{ .Values.rancher.arrays.FlashArrays.MgmtEndPoint }}
-      APIToken: {{ .Values.rancher.arrays.FlashArrays.APIToken }}
+  # FlashArrays:
+  #   - MgmtEndPoint: {{ .Values.rancher.arrays.FlashArrays.MgmtEndPoint }}
+  #     APIToken: {{ .Values.rancher.arrays.FlashArrays.APIToken }}
   #    Labels:
   #      rack: "22"
   #      env: "prod"
