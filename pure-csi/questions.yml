@@ -9,6 +9,7 @@ questions:
   label: "Pure PSO Namespace"
   type: string
   default: "k8s"
+  group: "Global PSO Settings"
 - variable: arrays.FlashArrays[0].MgmtEndPoint
   label: "FA EndPoint"
   type: string
