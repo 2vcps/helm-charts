@@ -8,7 +8,7 @@ questions:
 - variable: namespace.pure
   label: "Pure PSO Namespace"
   type: string
-  default: "rancherk8s"
+  default: "k8s"
 - variable: arrays.FlashArrays[0].MgmtEndPoint
   label: "FA EndPoint"
   type: string
@@ -23,5 +23,36 @@ questions:
   default: "some API key"
   description: "FlashArray Management API"
   group: "FlashArray Settings"
-
+- variable: arrays.FlashArrays[1].MgmtEndPoint
+  label: "FA EndPoint"
+  type: string
+  required: false
+  description: "FlashArray Management VIP"
+  group: "FlashArray Settings"
+- variable: arrays.FlashArrays[1].APIToken
+  label: "FA API"
+  type: string
+  required: false
+  description: "FlashArrAY Management API"
+  group: "FlashArray Settings"
+- variable: arrays.FlashBlades[0].MgmtEndPoint
+  label: "FB Management EndPoint"
+  type: string
+  required: false
+  default: "192.169.1.30"
+  description: "FlashBlade Management VIP"
+  group: "FlashBlade Settings"
+- variable: arrays.FlashBlades[0].NFSEndPoint
+  label: "FB NFS"
+  type: string
+  required: false
+  default: "NFS IP"
+  description: "FlashBlade NFS IP"
+  group: "FlashBlade Settings"
+- variable: arrays.FlashBlades[0].APIToken
+  label: "FA API"
+  type: string
+  required: false
+  description: "FlashBlade Management API"
+  group: "FlashBlade Settings"
 
